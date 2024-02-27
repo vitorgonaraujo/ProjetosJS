@@ -6,9 +6,8 @@ async function calculaIMC(altura, peso) {
     if (typeof altura !== "number" || typeof peso !== "number") {
       return Promise.reject("Altura e Peso devem ser números.");
     }
-      const IMC = peso / Math.pow(altura, 2);
-      return IMC.toFixed(1);
-    
+    const IMC = peso / Math.pow(altura, 2);
+    return IMC.toFixed(1);
   }),
     2 * 1000;
 }
